@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { calcular } from "./utils/calculadoraService";
-import * as tipoOperacoes from "./utils/tipoOperacoes";
+import { calcular } from "../utils/calculadoraService";
+import * as tipoOperacoes from "../utils/tipoOperacoes";
 
 describe("Teste calculadora", () => {
   it("deve garantir que 1 + 4 = 5", () => {

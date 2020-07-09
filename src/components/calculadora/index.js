@@ -14,7 +14,7 @@ const Calculadora = ({ value, adicionarNumeros, defOp, resultado, limpar }) => {
         width: "400px",
       }}
     >
-      <Container>
+      <Container className="container-calculadora">
         <Row>
           <Col xs="3">
             <Button onClick={limpar} variant="danger">
