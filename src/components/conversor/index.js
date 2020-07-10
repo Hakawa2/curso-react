@@ -6,7 +6,7 @@ import { faAngleDoubleRight } from "@fortawesome/free-solid-svg-icons";
 import "./style.css";
 
 import ListarMoedas from "../listarMoedas";
-import Resultado from "../modals/conversor";
+import Resultado from "../modals";
 
 const Conversor = ({
   valor,
@@ -80,6 +80,8 @@ const Conversor = ({
           show={showModal}
           onHide={hideModal}
           data={resultadoConversao}
+          title={"Conversão"}
+          buttonText={"Nova Conversão"}
         />
       </Jumbotron>
     </>
