@@ -1,16 +1,16 @@
 import React from "react";
 import { Modal, Button } from "react-bootstrap";
 
-const Resultado = ({ show, onHide, data }) => {
+const Resultado = ({ show, onHide, data, title, buttonText }) => {
   return (
     <Modal show={show} onHide={onHide} data-testid="modal">
       <Modal.Header closeButton>
-        <Modal.Title>Conversão</Modal.Title>
+        <Modal.Title>{title}</Modal.Title>
       </Modal.Header>
       <Modal.Body>{data}</Modal.Body>
       <Modal.Footer>
         <Button variant="success" onClick={onHide}>
-          Nova Conversão
+          {buttonText}
         </Button>
       </Modal.Footer>
     </Modal>
